@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Iago Macêdo | Desenvolvedor Full Stack</title>
+    <link rel="icon" href="fav.png" />
+    <script type="module" defer="defer" src="app.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero" id="hero">
+      <div class="canvas"><canvas class="connecting-dots"></canvas></div>
+      <div class="heading">
+        <div class="heading__line-1">Olá, sou <span>Iago Macêdo</span>.</div>
+        <div class="heading__line-2">Desenvolvedor Full Stack</div>
+        <a href="#about" class="heading__link"
+          ><div class="heading-cta">
+            Veja meus projetos
+            <svg
+              class="heading__arrow"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>arrow-right</title>
+              <path
+                d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"
+              ></path>
+            </svg></div
+        ></a>
+      </div>
+    </div>
+    <nav class="navigation-bar">
+      <ul class="navigation">
+        <li class="navigation__item navigation__item--active" id="nav-hero">
+          <a href="#hero">Home</a>
+        </li>
+        <li class="navigation__item" id="nav-about">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="navigation__item" id="nav-projects">
+          <a href="#projects">Projetos</a>
+        </li>
+        <li class="navigation__item" id="nav-contact">
+          <a href="#contact">Contato</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-bg">
+      <div class="canvas"><canvas class="canvas-2"></canvas></div>
+    </div>
+    <section class="about" id="about">
+      <h2 class="about__heading section-heading">Sobre</h2>
+      <div class="about__content">
+        <div class="profile">
+          <div class="profile__picture">
+            <img class="profile__me" src="imgs/me-removebg-preview.png" alt="">
+          </div>
+          <p class="profile__blurb">
+            Desde que o primeiro computador chegou na minha casa, fiquei
+            fascinado pela sua tecnologia e tudo que a envolve desde softwares
+            até hardwares por conta disso descobri a programação que hoje sou
+            apaixonado. Graduando em Sistemas de informação atualmente no quinto
+            semestre. 📚
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skills__row">
+            <div class="skills__item skills__item--1">
+              <img
+                src="imgs/html.6aa56206be02cf6404844871df1d2da6.png"
+                alt=""
+              />
+              <div class="skills__item-name">HTML</div>
+            </div>
+            <div class="skills__item skills__item--8">
+              <img
+                src="imgs/react.cb15bfce2a9004ce61c5f79f805b067b.png"
+                alt=""
+              />
+              <div class="skills__item-name">REACT</div>
+            </div>
+            <div class="skills__item skills__item--6">
+              <img
+                src="imgs/express.1eca086d2a78b4be3dd1f0a47b84b618.png"
+                alt=""
+              />
+              <div class="skills__item-name">EXPRESS</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--3">
+              <img src="imgs/js.f8a28e905c78dadb79434b7ceebd52a0.png" alt="" />
+              <div class="skills__item-name">JAVASCRIPT</div>
+            </div>
+            <div class="skills__item skills__item--10">
+              <img src="imgs/css.0ce0f0a2b4c4aa34b64c40e5278af3d1.png" alt="" />
+              <div class="skills__item-name">CSS</div>
+            </div>
+            <div class="skills__item skills__item--7">
+              <img
+                src="imgs/node.94a06c4b9dd29e984501e6407e77a918.png"
+                alt=""
+              />
+              <div class="skills__item-name">NODE</div>
+            </div>
+            <div class="skills__item skills__item--4">
+              <img src="imgs/git.3092b5991e8accb9e7c36817c048a8d5.png" alt="" />
+              <div class="skills__item-name">GIT</div>
+            </div>
+          </div>
+          <div class="skills__row">
+            <div class="skills__item skills__item--5">
+              <img src="imgs/typescript.5968381.png" alt="" />
+              <div class="skills__item-name">TYPESCRIPT</div>
+            </div>
+            <div class="skills__item skills__item--2">
+              <img src="imgs/bootstrap.logo-shadow.png" alt="" />
+              <div class="skills__item-name">BOOTSTRAP</div>
+            </div>
+            <div class="skills__item skills__item--9">
+              <img
+                src="imgs/mongo.41ae1969f341d30268a13d57846efcc6.png"
+                alt=""
+              />
+              <div class="skills__item-name">MONGODB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects__heading section-heading">Projetos</h2>
+      <div class="project project-left">
+        <a href="https://goodgames-pearl.vercel.app/" target="_blank">
+          <div class="project__image-container weather">
+            <div class="project__image-image">
+              <img
+                src="imgs/goodgames.png"
+                alt=""
+              />
+            </div>
+          </div></a>
+        <div class="project__info">
+          <h3 class="project__title">GooDGames</h3>
+          <p class="project__description">
+            Site feito em react com consumo de uma api de games.
+          </p>
+          <a href="https://goodgames-pearl.vercel.app/" target="_blank"
+            ><div class="project__live">Ver site</div></a
+          ><a href="https://github.com/Iag0ow/goodgames" target="_blank"
+            ><div class="project__code">Ver código</div></a
+          >
+        </div>
+      </div>
+      </div>
+      <div class="project project-right">
+        <div class="project__info">
+          <h3 class="project__title">ReactGram</h3>
+          <p class="project__description">
+            Um projeto Full Stack feito com funcionalidades do instagram.
+          </p>
+          <a href="https://reactgram-eight.vercel.app/" target="_blank"
+            ><div class="project__live">Ver site</div></a
+          ><a href="https://github.com/Iag0ow/ReactGram" target="_blank"
+            ><div class="project__code">Ver código</div></a
+          >
+        </div>
+        <a href="https://reactgram-eight.vercel.app/" target="_blank"
+          ><div class="project__image-container todo">
+            <div class="project__image-image">
+              <img
+                src="imgs/reactgram.png"
+                alt=""
+              />
+            </div></div
+        ></a>
+      </div>
+      <div class="project project-left">
+        <a href="https://iagomacedo.tech/" target="_blank"
+          ><div class="project__image-container weather">
+            <div class="project__image-image">
+              <img
+                src="imgs/to-do.png"
+                alt=""
+              />
+            </div></div
+        ></a>
+        <div class="project__info">
+          <h3 class="project__title">TO-DO de contatos</h3>
+          <p class="project__description">
+            Uma agenda to-do feita com node front com EJS e deploy na Google Cloud.
+          </p>
+          <a href="https://iagomacedo.tech/" target="_blank"
+            ><div class="project__live">Ver site</div></a
+          ><a href="https://github.com/Iag0ow/ProjetoAgenda" target="_blank"
+            ><div class="project__code">Ver código</div></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__heading section-heading">Contato</h2>
+      <p class="contact__text">
+        Tem uma pergunta ou quer trabalhar junto? Deixe seus dados que
+        retornarei o mais breve possível.
+      </p>
+      <form
+        class="contact__form"
+        action="https://formspree.io/f/xdoprgpv"
+        method="POST"
+      >
+        <input class="contact__form-name" name="name" placeholder="Nome" />
+        <input
+          class="contact__form-email"
+          type="email"
+          name="_replyto"
+          placeholder="Email"
+        />
+        <textarea
+          class="contact__form-message"
+          name="message"
+          placeholder="Mensagem"
+        ></textarea>
+        <div class="contact__form-error-submit">
+          <div class="form-error">
+            <div class="form-error__name">Por favor coloque seu nome.</div>
+            <div class="form-error__email">
+              Por favor insira um email válido.
+            </div>
+            <div class="form-error__msg">Por favor coloque uma mensagem.</div>
+          </div>
+          <button type="button" class="contact__form-submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <a href="#hero"
+        ><div class="return-home">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="100%"
+            viewBox="0 0 24 24"
+          >
+            <title></title>
+            <path
+              fill="#fafafa"
+              d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"
+            ></path>
+          </svg></div
+      ></a>
+      <div class="socials">
+        <a href="https://github.com/Iag0ow" target="_blank"
+          ><div class="socials__github">
+            <img
+              src="imgs/github-logo.d03ce87cf6b5a432c44f847eefec1204.png"
+              alt=""
+            /></div></a
+        ><a href="mailto:iagomacedo159@gmail.com" target="_blank"
+          ><div class="socials__email">
+            <img
+              src="imgs/mail.4f2db89278f9ad3abef627211b414574.png"
+              alt=""
+            /></div
+        ></a>
+      </div>
+      <p class="copyright">Iago Macêdo ©2023</p>
+    </footer>
+  </body>
+</html>
