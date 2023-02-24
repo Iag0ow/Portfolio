@@ -9,12 +9,9 @@ export const canvasDotsBg = function () {
     ], // 75% of dots are blue. 25% pink
     color = "rgb(81, 162, 233)";
 
-  // ctx.globalAlpha = 0.8;
   canvas.width = document.body.scrollWidth;
   canvas.height = window.innerHeight;
   canvas.style.display = "block";
-  // ctx.fillStyle = colorDot;
-  // ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
   ctx.lineWidth = 0.3;
   ctx.strokeStyle = color;
 
@@ -75,31 +72,6 @@ export const canvasDotsBg = function () {
     ctx.globalAlpha = 0;
   }
 
-  // decided to turn off connecting dots under 1100px
-
-  // } else if (windowSize > 650) {
-  //   dots = {
-  //     nb: 400,
-  //     distance: 50,
-  //     d_radius: 185,
-  //     array: [],
-  //   };
-  // } else if (windowSize > 500) {
-  //   dots = {
-  //     nb: 325,
-  //     distance: 45,
-  //     d_radius: 170,
-  //     array: [],
-  //   };
-  // } else {
-  //   dots = {
-  //     nb: 270,
-  //     distance: 45,
-  //     d_radius: 140,
-  //     array: [],
-  //   };
-  // }
-
   function Dot() {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
@@ -109,7 +81,6 @@ export const canvasDotsBg = function () {
 
     this.radius = Math.random() * 1.5;
 
-    // this.colour = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
     this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
   }
 
@@ -117,7 +88,6 @@ export const canvasDotsBg = function () {
     create: function () {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
-      // ctx.fillStyle = this.colour;
 
       // meed to acount for scroll height since the bg is static and uses mouse position
       const top =
@@ -133,7 +103,6 @@ export const canvasDotsBg = function () {
 
       // this chops the bracket off the rgb colour and ads an opacity
       ctx.fillStyle = this.colour.slice(0, -1) + `,${1 - distanceRatio})`;
-      // ctx.fillStyle = this.colour;
 
       ctx.fill();
     },
@@ -220,20 +189,6 @@ export const canvasDotsBg = function () {
     dot.animate();
   }
 
-  // window.onmousemove = function (parameter) {
-  //   mousePosition.x = parameter.pageX;
-  //   mousePosition.y = parameter.pageY;
-
-  //   // sometimes if the mouse is off screen on refresh, it bugs out
-  //   try {
-  //     // want the first dot to follow the mouse
-  //     dots.array[0].x = parameter.pageX;
-  //     dots.array[0].y = parameter.pageY;
-  //   } catch {
-  //     //
-  //   }
-  // };
-
   window.onscroll = function (parameter) {
     mousePosition.x = window.innerWidth / 2;
     mousePosition.y = window.innerHeight / 2;
@@ -241,20 +196,12 @@ export const canvasDotsBg = function () {
     const top =
       (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
     mousePosition.y += top;
-    // console.log(top);
-
-    // console.log(mousePosition.x);
   };
-
-  // mousePosition.x = window.innerWidth / 2;
-  // mousePosition.y = window.innerHeight / 2;
 
   const draw = setInterval(createDots, 1000 / 30);
 
   window.onresize = function () {
     clearInterval(draw);
     canvasDotsBg();
-
-    // console.log('yoza');
   };
 };
