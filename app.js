@@ -9,7 +9,6 @@ window.onload = function () {
 function aboutFadeIn(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting && document.body.scrollWidth > 1300) {
-      // console.log('yo');
       // fade in bio
       document.querySelector(".profile").classList.add("profile__fade-in");
 
@@ -18,70 +17,70 @@ function aboutFadeIn(entries, observer) {
         return new Promise((resolve) => setTimeout(resolve, milliseconds));
       };
 
-      //html
+      //1
       sleep(1000).then(() => {
         document
           .querySelector(".skills__item--1")
           .classList.add("skills__item-fade-in");
       });
 
-      //webpack
+      //2
       sleep(1100).then(() => {
         document
           .querySelector(".skills__item--2")
           .classList.add("skills__item-fade-in");
       });
 
-      //js
+      //3
       sleep(1200).then(() => {
         document
           .querySelector(".skills__item--3")
           .classList.add("skills__item-fade-in");
       });
 
-      //git
+      //4
       sleep(1300).then(() => {
         document
           .querySelector(".skills__item--4")
           .classList.add("skills__item-fade-in");
       });
 
-      //sass
+      //5
       sleep(1400).then(() => {
         document
           .querySelector(".skills__item--5")
           .classList.add("skills__item-fade-in");
       });
 
-      //node
+      //6
       sleep(1500).then(() => {
         document
           .querySelector(".skills__item--6")
           .classList.add("skills__item-fade-in");
       });
 
-      //py
+      //7
       sleep(1600).then(() => {
         document
           .querySelector(".skills__item--7")
           .classList.add("skills__item-fade-in");
       });
 
-      //react
+      //8
       sleep(1700).then(() => {
         document
           .querySelector(".skills__item--8")
           .classList.add("skills__item-fade-in");
       });
 
-      //r
+      //9
       sleep(1800).then(() => {
         document
           .querySelector(".skills__item--9")
           .classList.add("skills__item-fade-in");
       });
 
-      //css
+      //10
       sleep(1900).then(() => {
         document
           .querySelector(".skills__item--10")
@@ -114,8 +113,6 @@ const navLinks = document.querySelectorAll(".navigation__item");
 function navFadeIn(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // console.log(entry.target.id);
-
       navLinks.forEach((link) => {
         link.classList.remove("navigation__item--active");
       });
@@ -153,18 +150,6 @@ observerNav.observe(document.querySelector("#contact"));
 let observerNavProjects = new IntersectionObserver(navFadeInProjects, options2);
 
 observerNavProjects.observe(document.querySelector("#projects"));
-
-// parralax scrolling effect on hero canvas
-
-// window.onscroll = function (e) {
-//   console.log(document.scrollTop);
-// };
-
-// document.addEventListener('scroll', () => {
-//   // console.log(window.scrollY);
-
-//   document.querySelector('.connecting-dots').style.top = `${window.scrollY}px`;
-// });
 
 // form validation
 
