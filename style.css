@@ -76,7 +76,7 @@ button {
 }
 .about__heading:before {
   position: absolute;
-  content: '';
+  content: "";
   border-bottom: 18px solid #ff4d5a;
   width: 16rem;
   display: block;
@@ -136,6 +136,14 @@ button {
 .profile__me {
   border-radius: 50%;
   margin-bottom: 10rem;
+}
+@media (max-width: 600px) {
+  .profile__me {
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+    max-width: 230px;
+  }
 }
 .profile__blurb {
   font-size: 1.8rem;
@@ -380,7 +388,7 @@ button {
 }
 .contact__heading:before {
   position: absolute;
-  content: '';
+  content: "";
   border-bottom: 18px solid #ff4d5a;
   width: 21rem;
   display: block;
@@ -433,7 +441,7 @@ button {
 }
 .contact__form-submit:after {
   position: absolute;
-  content: '';
+  content: "";
   border-bottom: 2px solid #ff4d5a;
   width: calc(100% + 2rem);
   left: -14%;
@@ -704,7 +712,7 @@ button {
 }
 .heading-cta:before,
 .heading-cta:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -834,7 +842,7 @@ button {
 }
 .projects__heading:before {
   position: absolute;
-  content: '';
+  content: "";
   border-bottom: 18px solid #ff4d5a;
   width: 22.5rem;
   display: block;
@@ -934,6 +942,8 @@ button {
 @media (max-width: 700px) {
   .project__info {
     background-color: rgba(26, 26, 26, 0.5);
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 @media (max-width: 560px) {
@@ -1016,7 +1026,7 @@ button {
 .project__live:after,
 .project__code:after {
   position: absolute;
-  content: '';
+  content: "";
   border-bottom: 2px solid #ff4d5a;
   width: calc(100% + 2rem);
   left: -10%;
