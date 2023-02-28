@@ -556,19 +556,33 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 35px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.socials__linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
 }
 .socials__github:hover,
-.socials__email:hover {
+.socials__email:hover,
+.socials__linkedin:hover {
   transform: scale(1.2);
 }
 .socials__github {
   margin-right: 1rem;
 }
 .socials__email {
+  margin-left: 1rem;
+}
+.socials__linkedin {
+  margin-right: 1rem;
   margin-left: 1rem;
 }
 .socials img {
